@@ -37,12 +37,30 @@
 
 (use-package js2-mode
   :ensure t
+  :defer t
   :mode (("\\.js$" . js2-mode)
          )
   :config
   (progn
     ;; js2-mode の設定値は setq ではなく custom-set-variables を使うこと
     ;; setq では設定した値が反映されなかった
-    (custom-set-variables '(js2-basic-offset 2))  ; indent
+    (custom-set-variables '(js2-basic-offset 4))  ; indent
+    ;; tern-mode
+    ;; npm install tern -g でインストールしておくこと
+    (use-package tern
+      :ensure t
+      :defer t
+      :if (executable-find "tern")
+      :config
+      (progn
+        (use-package tern-auto-complete
+          :ensure t
+          :config
+          (tern-ac-setup)
+          )
+        )
+      ) 
     )
-)
+  )
+
+
