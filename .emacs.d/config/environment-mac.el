@@ -46,7 +46,7 @@
 ;; (set-default-coding-systems 'utf-8-unix)
 
 ;; テキストファイル／新規バッファの文字コード
-;;(prefer-coding-system 'utf-8-unix)
+(prefer-coding-system 'utf-8-unix)
 
 ;; ファイル名の文字コード
 ;; (set-file-name-coding-system 'utf-8-unix)
@@ -55,7 +55,7 @@
 ;; (set-keyboard-coding-system 'utf-8-unix)
 
 ;; サブプロセスのデフォルト文字コード
-;; (setq default-process-coding-system '(undecided-dos . utf-8-unix))
+(setq default-process-coding-system '(undecided-dos . utf-8-unix))
 
 
 ;;; -------------------------------------------------------------------
