@@ -10,7 +10,6 @@
 (use-package helm
   :ensure t
   :defer t
-  :idle ()
   :bind (("C-l" . helm-mini)
          ("M-r" . helm-resume)
          ("C-x b" . helm-for-files)
