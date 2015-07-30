@@ -110,8 +110,8 @@
 ;; Packages to install from el-get
 (defvar my/el-get-packages
   '(
-    sdic
-    text-translator
+;;    sdic
+;;    text-translator
     dmacro
     cp5022x
     setup-cygwin
@@ -144,8 +144,8 @@
 (load "config/packages/init-session" nil t)
 (load "config/packages/init-srspeedbar" nil t)
 (load "config/packages/init-dmacro" nil t)
-(load "config/packages/init-sdic" nil t)
-(load "config/packages/init-texttranslator" nil t)
+;;(load "config/packages/init-sdic" nil t)
+;;(load "config/packages/init-texttranslator" nil t)
 (load "config/packages/init-cp5022x" nil t)
 ;; (load "config/packages/init-auto-async-byte-complile" nil t)
 ;; (load "config/packages/init-elscreen" nil t)
