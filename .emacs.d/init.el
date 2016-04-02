@@ -8,6 +8,9 @@
 ;;;; Emacs のインストール方法
 
 ;; - Mac OSX
+;;   + Homebrew からインストールする場合(24.5.1)
+;;     : brew tap src256/emacs-jp
+;;     : brew install emacs-jp   --japanese --with-cocoa --srgb --with-gnutls
 ;;   + Homebrew からインストールする場合(24.3)
 ;;     : brew install --cocoa --srgb --with-gnutls --japanese emacs -v
 
