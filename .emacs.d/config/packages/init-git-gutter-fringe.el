@@ -5,6 +5,6 @@
   (global-git-gutter-mode)
   (set-face-foreground 'git-gutter-fr:modified "dark cyan")
   (set-face-foreground 'git-gutter-fr:added    "forest green")
-  (set-face-foreground 'git-gutter-fr:deleted  "white")
+  (set-face-foreground 'git-gutter-fr:deleted  "dark gray")
   )
 

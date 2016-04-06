@@ -12,7 +12,6 @@
 ;;;; Apache などの設定ファイルに色をつける
 ;;; -------------------------------------------------------------------
 
-
 (require 'generic-x)
 
 
@@ -152,7 +151,7 @@
 (eval-after-load 'linum
   '(progn
      ;; 行番号のフォーマット
-     (set-face-attribute 'linum nil  :foreground "gray")
-     (setq linum-format"%4d ")
+     (set-face-attribute 'linum nil  :foreground "dim gray")
+     (setq linum-format"%4d:")
      ))
 
