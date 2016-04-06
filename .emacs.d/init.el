@@ -106,7 +106,8 @@
 ;;  )
 
 (setq load-path (append
-                 '("~/.emacs.d"
+                 '(
+		   "~/.emacs.d/config"
                    "~/.emacs.d/site-elisp"
                    "~/.emacs.d/elisp"
                    )
@@ -117,31 +118,31 @@
 ;;; -------------------------------------------------------------------
 
 ;; 見た目の設定
-(load "config/initfuncs" nil t)
+(load "initfuncs" nil t)
 
 ;; 各環境の設定ファイル読み込み
 (cond
  (ns-p
-  (load "config/environment-mac" nil t))
- (windows-p
-  (load "config/environment-win" nil t))
+  (load "environment-mac" nil t))
+ (windowsp
+  (load "environment-win" nil t))
 )
 
 ;; 見た目の設定
-(load "config/face" nil t)
+(load "face" nil t)
 
 ;; 編集環境の設定
-(load "config/edit" nil t)
+(load "edit" nil t)
 
 ;; 組込みのelispの設定 
-(load "config/builtins" nil t)
+(load "builtins" nil t)
 
 ;; サードパーティのelispの設定
-(load "config/packages" nil t)
+(load "packages" nil t)
 
 ;; ローカル設定があったら読み込む
 (condition-case err
-    (load "config/local" nil t)
+    (load "local" nil t)
   (error))
 
 ;;; init.el ends here
