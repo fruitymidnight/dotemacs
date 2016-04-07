@@ -61,7 +61,7 @@
   :config
   (progn
     ;; ディレクトリの設定
-    (setq org-directory "~/org/gtd")
+    (setq org-directory my:user-gtd-directory)
     (setq org-default-notes-file (concat org-directory "agenda.org"))
     )
   )

@@ -79,7 +79,18 @@
 (defconst my:user-emacs-share-directory
   (expand-file-name (concat user-emacs-directory "share/")))
 
+(defconst my:user-documents-directory
+  (expand-file-name (concat (getenv "HOME") "/Documents/")))
+(defconst my:user-junk-directory
+  (expand-file-name (concat my:user-documents-directory "junk/")))
+(defconst my:user-gtd-directory
+  (expand-file-name (concat my:user-documents-directory "gtd/")))
 
+;; local に以下の設定で変更
+;; (defconst my:user-documents-directory
+;;   (expand-file-name (concat (getenv "HOME") "/Dropbox/docs/")))
+;; (defconst my:user-junk-directory
+;;   (expand-file-name (concat my:user-documents-directory "01_プログラム/memo/")))
 
 ;;; -------------------------------------------------------------------
 ;;;; load-path
