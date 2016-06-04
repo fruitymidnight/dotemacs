@@ -154,7 +154,11 @@
 (load (expand-file-name (concat my:user-emacs-config-directory "packages/init-popwin")) nil t)
 (load (expand-file-name (concat my:user-emacs-config-directory "packages/init-yasnippet")) nil t)
 ;; (load (expand-file-name (concat user-emacs-directory "config/packages/init-yatex")) nil t)
-(load (expand-file-name (concat my:user-emacs-config-directory "packages/init-git-gutter-fringe")) nil t)
+;; (load (expand-file-name (concat my:user-emacs-config-directory "packages/init-git-gutter-fringe")) nil t)
 (load (expand-file-name (concat my:user-emacs-config-directory "packages/init-web")) nil t)
 (load (expand-file-name (concat my:user-emacs-config-directory "packages/init-junk")) nil t)
 (load (expand-file-name (concat my:user-emacs-config-directory "packages/init-editorconfig")) nil t)
+
+
+(provide 'packages)
+;;; packages.el ends here

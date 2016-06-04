@@ -1,0 +1,20 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: angular-controller
+# key: angular-controller
+# --
+(function() {
+    'use strict';
+
+    angular.module('${1:moduleName}')
+      .controller('`(file-name-sans-extension (file-name-nondirectory (buffer-file-name)))`', `(file-name-sans-extension (file-name-nondirectory (buffer-file-name)))`);
+
+    var `(file-name-sans-extension (file-name-nondirectory (buffer-file-name)))` = function ($scope) {
+        $scope.awesomeThings = [
+          'HTML5 Boilerplate',
+          'AngularJS',
+          'Karma'
+        ];
+      });
+
+}());
+
